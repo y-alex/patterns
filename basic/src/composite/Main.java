@@ -22,6 +22,7 @@ public class Main {
 		router2.connect(new Computer(2));
 		router2.connect(new Computer(2));
 		
+		//result is 14
 		System.out.println("Total length of the network is: " + router2.getLength());
 
 	}
