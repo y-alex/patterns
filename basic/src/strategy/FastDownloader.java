@@ -24,7 +24,9 @@ public  class FastDownloader implements Downloader{
 						e.printStackTrace();
 					}		
 					System.out.println("Fast download completed");
-					mOnCompleteListener.downloadCompleted(FastDownloader.this);
+					if(mOnCompleteListener!=null){
+						mOnCompleteListener.downloadCompleted(FastDownloader.this);
+					}
 			}
 		});
 		System.out.println("Start fast download from "+uri);

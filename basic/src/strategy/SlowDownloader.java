@@ -22,8 +22,10 @@ public class SlowDownloader implements Downloader{
 						e.printStackTrace();
 					}
 				System.out.println("Slow download completed");	
-				mOnCompleteListener.downloadCompleted(SlowDownloader.this);
-			}
+				if(mOnCompleteListener!=null){
+					mOnCompleteListener.downloadCompleted(SlowDownloader.this);
+				}
+				}
 		});
 		
 		System.out.println("Start slow download from "+uri);
