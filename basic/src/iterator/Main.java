@@ -1,7 +1,7 @@
 package iterator;
 
 /*
- * The idea of pattern is: create one mechanism iterating throw any object. 
+ * The idea of pattern is: create ONE mechanism iterating throw any object. 
  * No matter this is one object or some collection.
  * We will create interface Iterator with methods that we need to iterate. Each object will have possibility 
  * give us his iterator and we have encapsulated the structure of object.  
