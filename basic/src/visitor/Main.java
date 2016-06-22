@@ -7,6 +7,7 @@ package visitor;
  * Brief: we have visitors with some logic that can do some operations with Element object
  * In example: The company has a bunch of the departments, all this departments need to control: quality and productivity 
  * Inspections - are our visitors
+ * When NOT to use: when we need add often new Elements we will need change all implementations of visitors
  */
 public class Main {
 
