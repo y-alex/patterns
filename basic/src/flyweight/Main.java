@@ -19,5 +19,10 @@ public class Main {
 		BubbleFactory.createBubble(2).draw(3, 3);
 		BubbleFactory.createBubble(1).draw(4, 4);// identical hash with radius 1
 	}
+	
+	//result
+	//Draw the bubble radius:1;flyweight.Bubble@2a139a55
+	//Draw the bubble radius:2;flyweight.Bubble@15db9742
+	//Draw the bubble radius:1;flyweight.Bubble@2a139a55
 
 }
