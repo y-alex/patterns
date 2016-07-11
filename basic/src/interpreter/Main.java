@@ -1,6 +1,5 @@
 package interpreter;
 
-import java.text.NumberFormat;
 
 /*
  * This is example of interpreter pattern.
@@ -26,11 +25,11 @@ public class Main {
 		return expression.interpret(mInterprContext);
 	}
 	public static void main(String args[]){
-		String str1 = "10 in binary";
-		String str2 = "10 in hexadecimal";
-		Main ec = new Main(new 	InterpreterContext());
-		System.out.println(str1+"= "+ec.interpret(str1));
-		System.out.println(str2+"= "+ec.interpret(str2));
+		String binary = "10 in binary";
+		String hexa = "10 in hexadecimal";
+		Main maIn = new Main(new 	InterpreterContext());
+		System.out.println(binary+"= "+maIn.interpret(binary));
+		System.out.println(hexa+"= "+maIn.interpret(hexa));
 	}
 
 }
